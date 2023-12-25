@@ -49,10 +49,10 @@ void ACharacterSlime::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 	if (Player == OtherActor)
 	{
 		Player->GetAttacked(GetAD());
-		//원래는 즉사 메소드를 따로 만들어야함.
-		GetAttacked(1000000);
 	}
 
+	//원래는 즉사 메소드를 따로 만들어야함.
+	GetAttacked(1000000);
 }
 
 void ACharacterSlime::GetAttacked(int32 Damage)
