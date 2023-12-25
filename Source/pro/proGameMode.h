@@ -13,6 +13,8 @@ class AproGameMode : public AGameModeBase
 
 public:
 	AproGameMode();
+	virtual void BeginPlay() override;
+	virtual void LoadLevel();
 };
 
 
